@@ -15,7 +15,7 @@ public class Main {
             List<String> list=new ArrayList<>();
             while(s.hasNextLine()){
                 list.add(s.nextLine());
-                if(list.contains("1.4")){
+                if(list.contains("1.5")){
                     StartForm form = new StartForm();
                     form.setVisible(true);
                 } else {

@@ -45,19 +45,16 @@ public class FileValid {
                     File downloaded = new File(folder + "\\SignPicture-1.12.1-2.8.1-universal.jar");
                     FileUtils.copyURLToFile(url, downloaded);
                 }
-
-                if (!process3.contains("WorldEdit-CUI-FE3-1.12.2-3.0.3.jar")) {
-                    System.out.println("Missing WorldEdit-CUI");
-                    URL url = new URL("http://joeydahuhuh.info/updator/mods/SignPicture-1.12.1-2.8.1-universal.jar");
-                    File downloaded = new File(folder + "\\WorldEdit-CUI-FE3-1.12.2-3.0.3.jar");
-                    FileUtils.copyURLToFile(url, downloaded);
-                }
                 if (!process3.contains("OptiFine_1.12.2_HD_U_F5.jar")) {
                     System.out.println("Missing Optifine");
                     URL url = new URL("http://joeydahuhuh.info/updator/mods/OptiFine_1.12.2_HD_U_F5.jar");
                     File downloaded = new File(folder + "\\OptiFine_1.12.2_HD_U_F5.jar");
                     FileUtils.copyURLToFile(url, downloaded);
 
+                }
+                if(process3.contains("WorldEdit-CUI-FE3-1.12.2-3.0.3.jar")){
+                    File del = new File(folder + "\\WorldEdit-CUI-FE3-1.12.2-3.0.3.jar");
+                    del.delete();
                 }
                 lb.setText("All files are now up-to-date");
 

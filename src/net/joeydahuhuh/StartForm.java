@@ -105,7 +105,7 @@ public class StartForm extends JFrame {
         contentPane.add(label3, "cell 0 7");
 
         //---- label4 ----
-        label4.setText("BTEHK - MU Pack Updater - V.1.4");
+        label4.setText("BTEHK - MU Pack Updater - V.1.5");
         contentPane.add(label4, "cell 0 9");
 
         //---- button1 ----
